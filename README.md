@@ -15,6 +15,7 @@ Hope you understand the german language!
 
 Create a Linux ext4 filesystem on your usb - don't forget to disable journaling.
 Use only one partition!<br>
+Create the fstab!<br>
 Mount the device (e.g. /dev/sdb1) and pacstrap the packages base and base-devel onto it.<br>
 Place the files of this project inside /mnt/root/<br>
 Change root to the usb.
