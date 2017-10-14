@@ -5,7 +5,11 @@ An install script for a basic arch linux installation.
 At this time, it should only be used for installation on USB drives.<br>
 Remember: I'm not responsible for what you do to your computer! If anything bad happens, do not blame me!<br>
 I'd advice you to not use this script unless you need a real quick installation.
-Better use the official [Arch Linux Installation Guide](https://www.archlinux.org/index.php/Installation_guide).
+Better use the official [Arch Linux Installation Guide](https://www.archlinux.org/index.php/Installation_guide).<br>
+<br>
+If you decide to use it, check the code for malicious commands!
+To be used from an existing Arch Linux Installation!
+Hope you understand the german language!
 
 ## Preparation
 
