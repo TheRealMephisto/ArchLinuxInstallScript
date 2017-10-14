@@ -11,15 +11,18 @@ Better use the official [Arch Linux Installation Guide](https://www.archlinux.or
 
 Create a Linux ext4 filesystem on your usb - don't forget to disable journaling.
 Use only one partition!<br>
-Mount the device (e.g. /dev/sdb1) and pacstrap the packages base and base-devel onto it.
+Mount the device (e.g. /dev/sdb1) and pacstrap the packages base and base-devel onto it.<br>
+Place the files of this project inside /mnt/root/<br>
 Change root to the usb.
 
 #### Example
+Executed from inside ./ArchLinuxInstallScript
 --> wipefs -a /dev/sdb<br>
 --> fdisk /dev/sdb<br>
 --> mkfs.ext4 -O "^has_journal" /dev/sdb1<br>
 --> mount /dev/sdb1 /mnt<br>
 --> pacstrap base base-devel<br>
+--> cp ./* /mnt/root<br>
 --> arch-chroot /mnt<br>
 
 ## Usage
