@@ -119,7 +119,11 @@ path_user_xinitrc="/home/${nutzername}/.xinitrc"
 cp /root/preconfigured/xinitrc $path_user_xinitrc
 chown $nutzername:$nutzername $path_user_xinitrc
 
+path_user_home="/home/${nutzername}/"
+cp /root/commands/README.html $path_user_home
+chown $nutzername:$nutzername $path_user_home
+
 # Abschließende Meldung
 echo 'Herzlichen Glückwunsch zum mobilen Arch Linux mit dem xfce-Desktop!'
 echo 'Starte einfach neu mit dem Befehl "reboot", logge dich mit dem neuen Benutzer ein und führe "startx" aus.'
-
+echo 'In deinem Home-Verzeichnis sollte sich nun eine README befinden, welche dir auch offline weiterhelfen kann.'
