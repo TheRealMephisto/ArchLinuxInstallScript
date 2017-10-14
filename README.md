@@ -15,12 +15,12 @@ Mount the device (e.g. /dev/sdb1) and pacstrap the packages base and base-devel 
 Change root to the usb.
 
 #### Example
---> wipefs -a /dev/sdb
---> fdisk /dev/sdb
---> mkfs.ext4 -O "^has_journal" /dev/sdb1
---> mount /dev/sdb1 /mnt
---> pacstrap base base-devel
---> arch-chroot /mnt
+--> wipefs -a /dev/sdb<br>
+--> fdisk /dev/sdb<br>
+--> mkfs.ext4 -O "^has_journal" /dev/sdb1<br>
+--> mount /dev/sdb1 /mnt<br>
+--> pacstrap base base-devel<br>
+--> arch-chroot /mnt<br>
 
 ## Usage
 
@@ -29,5 +29,5 @@ The script install_arch.sh will install the xfce4 desktop environment, the scrip
 The last option is especially useful for usb drives with small size.<br>
 Make the install script executable and execute it. It will guide you through the installation.
 
---> chmod +x /root/install_arch.sh
---> /root/install_arch.sh
+--> chmod +x /root/install_arch.sh<br>
+--> /root/install_arch.sh<br>
