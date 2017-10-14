@@ -1,6 +1,6 @@
 # ArchLinuxInstallScript
 
-##Description
+## Description
 An install script for a basic arch linux installation.
 At this time, it should only be used for installation on USB drives.<br>
 Remember: I'm not responsible for what you do to your computer! If anything bad happens, do not blame me!<br>
