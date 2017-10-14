@@ -16,6 +16,7 @@ echo 'KEYMAP=de-latin1' > /etc/vconsole.conf
 echo 'Im folgenden wirst du nach ein paar Einstellungen gefragt.'
 echo 'Doch zunächst stelle sicher, dass du...'
 echo '...dich bereits um die Partitionierung gekümmert hast (nur eine Partition wird von diesem Skript unterstützt!).'
+echo '...bereits die fstab erstellt hast.'
 echo '...bereits das Paket base installiert hast.'
 echo '...root bist.'
 echo '...Zugriff zum Internet hast.'
@@ -94,7 +95,7 @@ visudo
 
 # Installiere ein paar Pakete
 echo 'Es werden nun einige Pakete installiert.'
-pacman -S git rsync mlocate bash-completion wireless_tools wpa_supplicant dialog lynx --noconfirm
+pacman -S git rsync mlocate bash-completion iw wireless_tools wpa_supplicant dialog lynx --noconfirm
 updatedb
 pacman -S ttf-dejavu alsa-utils xorg-server xorg-xinit xorg-twm xterm xorg-server-devel --noconfirm
 pacman -S xf86-video-vesa xf86-video-ati xf86-video-intel xf86-video-nouveau --noconfirm
